@@ -7,6 +7,7 @@ int generateRandomNum(int a)
 	srand(time(NULL));
 	return rand() % a;
 }
+
 int greater(char ch1, char ch2)
 {
 	if(ch1==ch2)
@@ -25,7 +26,7 @@ int greater(char ch1, char ch2)
 	{
 		return 1;
 	}
-     else if(ch1 == 'S'&& ch2 == 'R')
+        else if(ch1 == 'S'&& ch2 == 'R')
 	{
 		return 0;
 	}
@@ -47,7 +48,7 @@ int main()
 	char out[] = {'R','P','S'};
 	for(int i=0; i<3; i++)
 	{
-		printf("\nPlayer1's turn\n");
+	    printf("\nPlayer1's turn\n");
 	    printf("Enter the number between 1 to 3:\n");
 	    scanf("%d", &temp);
 	    player1 = out[temp-1];
@@ -59,19 +60,19 @@ int main()
 	    printf("Computer selected %c\n",Computer);  
 	    
 	if(greater(player1, Computer)==1)
-    {
-    	player1Score +=1;
-    	printf("You got it!\n");
+        {
+    	    player1Score +=1;
+    	    printf("You got it!\n");
 	}
 	else if(greater(player1, Computer)==-1)
 	{
-		ComputerScore +=1;
-		player1Score +=1;
-		printf("It's draw!\n");
+	    ComputerScore +=1;
+	    player1Score +=1;
+	    printf("It's draw!\n");
 	}
 	else
 	{
-		ComputerScore +=1;
+	    ComputerScore +=1;
 	    printf("Computer got it!\n");	
 	}
 	    
@@ -81,14 +82,14 @@ int main()
        
 	if(player1Score>ComputerScore)
 	{
-		printf("Congratulations! Hurray! You Won the game!\n");
+	     printf("Congratulations! Hurray! You Won the game!\n");
 	}
 	else if(player1Score<ComputerScore)
 	{
-		printf("Computer Won! Better luck next time\n");
+	     printf("Computer Won! Better luck next time\n");
 	}
 	else 
-	    printf("It's draw\n");
+	     printf("It's draw\n");
 	    
 	return 0;
 } 
