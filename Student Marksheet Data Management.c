@@ -83,7 +83,7 @@ int main() {
 		            printf("\t\tSubject\t\t\n\n");
 		            printf("The Maths subject marks is : %d\n", st[i].sub1);
 		            printf("The Science subject marks is : %d\n", st[i].sub2);
-		            printf("The Social Sciencesubject marks is : %d\n", st[i].sub3);
+		            printf("The Social Science subject marks is : %d\n", st[i].sub3);
 		            printf("The English subject marks is : %d\n", st[i].sub4);
 		            printf("The Hindi subject marks is : %d\n\n", st[i].sub5);
 		            
